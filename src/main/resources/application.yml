@@ -18,4 +18,6 @@ spring:
     show-sql: true
   redis:
     host: 192.168.120.128
+  activiti:
+    check-process-definitions: false
 debug: true

@@ -1,6 +1,7 @@
 package org.java;
 
 import at.pollux.thymeleaf.shiro.dialect.ShiroDialect;
+import org.activiti.spring.boot.SecurityAutoConfiguration;
 import org.apache.shiro.spring.web.ShiroFilterFactoryBean;
 import org.apache.shiro.web.mgt.DefaultWebSecurityManager;
 import org.java.realm.MyRealm;
@@ -10,7 +11,7 @@ import org.springframework.context.annotation.Bean;
 
 import java.util.HashMap;
 
-@SpringBootApplication
+@SpringBootApplication(exclude = SecurityAutoConfiguration.class)
 public class BackstageApplication {
 
     public static void main(String[] args) {
