@@ -1,0 +1,21 @@
+server:
+  port: 9001
+spring:
+  thymeleaf:
+    mode: LEGACYHTML5
+    cache: false
+    suffix: .html
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: '!Zhanghe66'
+    url: jdbc:mysql://114.116.105.22:3306/test?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT%2B8&useSSL=false
+  jpa:
+    hibernate:
+      ddl-auto: update
+      naming:
+        implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyComponentPathImpl
+    show-sql: true
+  redis:
+    host: 192.168.120.128
+debug: true
